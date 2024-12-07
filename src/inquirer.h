@@ -102,7 +102,7 @@ public:
 		if (m_asked && !askAgainIfAnswered) return m_answer;
 		auto printQuestion = [&](const std::string& append = "")
 		{
-		  std::cout << "\033[1m\033[34m?\033[0m \033[1m" << m_question << "\033[0m " << append;
+		  std::cout << "[\033[1m\033[34m?\033[0m] \033[1m" << m_question << "\033[0m " << append;
 		};
 
 		auto takeInput = [](std::string& destination)
